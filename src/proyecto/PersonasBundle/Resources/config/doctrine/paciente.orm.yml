@@ -1,0 +1,32 @@
+proyecto\PersonasBundle\Entity\paciente:
+    type: entity
+    table: null
+    repositoryClass: proyecto\PersonasBundle\Entity\pacienteRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        dni:
+            type: integer
+            length: 8
+            
+        fechaIngreso:
+            type: string
+            length: 255
+        peso:
+            type: string
+            length: 255
+        talla:
+            type: string
+            length: 255
+            
+        NombreYApellido:
+            type: string
+            length: 255
+            
+        ObraSocial:
+            type: boolean
+            length: 2    
+    lifecycleCallbacks: {  }

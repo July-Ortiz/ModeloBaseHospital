@@ -1,0 +1,30 @@
+proyecto_paciente:
+    path:     /
+    defaults: { _controller: "proyectoPersonasBundle:paciente:index" }
+
+proyecto_paciente_show:
+    path:     /{id}/show
+    defaults: { _controller: "proyectoPersonasBundle:paciente:show" }
+
+proyecto_paciente_new:
+    path:     /new
+    defaults: { _controller: "proyectoPersonasBundle:paciente:new" }
+
+proyecto_paciente_create:
+    path:     /create
+    defaults: { _controller: "proyectoPersonasBundle:paciente:create" }
+    requirements: { _method: post }
+
+proyecto_paciente_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "proyectoPersonasBundle:paciente:edit" }
+
+proyecto_paciente_update:
+    path:     /{id}/update
+    defaults: { _controller: "proyectoPersonasBundle:paciente:update" }
+    requirements: { _method: post|put }
+
+proyecto_paciente_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "proyectoPersonasBundle:paciente:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,44 @@
+{% extends 'proyectoMainBundle::layout.html.twig' %}
+
+{% block titulo %} Main{% endblock %}
+
+{% block main_content -%}        
+    {# variables #}
+    {% set NombreYApellido   = 'Julia Ortiz'%}
+    {% set dni = '27815296'%}
+    {% set ObraSocial    = 'si'%}
+    {% set id   = '999887'%}
+    {% set talla   = '1.60'%}
+    {% set peso   = '60'%}
+    {% set FechaIngreso   = '10 de noviembre 2016'%}
+    <h1>pacientes</h1>
+
+      <table class="tabla">
+          <tr class="tabla_encabezado">
+              <td>NombreYApellido</td>
+              <td>dni</td>
+              <td>ObraSocial</td>
+              <td>id</td>
+              <td>talla</td>
+              <td>peso</td>
+              <td>FechaIngreso</td>
+          </tr>
+          <tr>
+              <td>{{NombreYApellido}}</td>
+              <td>{{dni}}</td>
+              <td>{{ObraSocial}}</td>
+              <td>{{id}}</td>
+              <td>{{talla}}</td>
+              <td>{{peso}}</td>
+              <td>{{FechaIngreso}}</td>
+              <td class="tabla_datos">
+                  <a href="{{ path('proyecto_main_paciente', {'NombreYApellido':NombreYApellido, 'dni':dni,'ObraSocial':ObraSocial,'id':id,'talla':talla,'peso':peso,'FechaIngreso':FechaIngreso}) }}">1</a>
+              </td>
+          </tr>           
+       </table>
+      
+      <br>
+ {% endblock %}
+ 
+ 
+

@@ -1,0 +1,34 @@
+{# src/proyecto/MainBundle/Resources/views/layout.html.twig #}
+{% extends '::base.html.twig' %}
+{% block title %}Hospital San Martín{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/proyectomain/css/main.css') }}" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('bundles/proyectomain/images/icono.ico') }}" />
+{% endblock %}
+
+{% block body %}
+    <br>
+    <div id="layout">
+        <div id="header"> 
+           <img alt="Hospital San Martín" src="{{asset('bundles/proyectomain/images/logo.jpg')}}" alt="logo" />
+           
+        </div>
+            
+        <div id="content">
+        
+            <div id="main_content">
+            {% block main_content %}
+                        
+            {% endblock %}
+
+            </div>
+
+         </div>
+        <div id="footer">
+            {{ "now" | date("d-m-Y") }}       
+        </div>
+    </div>           
+  
+{% endblock %}   

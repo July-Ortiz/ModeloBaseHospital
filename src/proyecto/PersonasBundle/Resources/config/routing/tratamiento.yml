@@ -1,0 +1,30 @@
+proyecto_tratamiento:
+    path:     /
+    defaults: { _controller: "proyectoPersonasBundle:tratamiento:index" }
+
+proyecto_tratamiento_show:
+    path:     /{id}/show
+    defaults: { _controller: "proyectoPersonasBundle:tratamiento:show" }
+
+proyecto_tratamiento_new:
+    path:     /new
+    defaults: { _controller: "proyectoPersonasBundle:tratamiento:new" }
+
+proyecto_tratamiento_create:
+    path:     /create
+    defaults: { _controller: "proyectoPersonasBundle:tratamiento:create" }
+    requirements: { _method: post }
+
+proyecto_tratamiento_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "proyectoPersonasBundle:tratamiento:edit" }
+
+proyecto_tratamiento_update:
+    path:     /{id}/update
+    defaults: { _controller: "proyectoPersonasBundle:tratamiento:update" }
+    requirements: { _method: post|put }
+
+proyecto_tratamiento_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "proyectoPersonasBundle:tratamiento:delete" }
+    requirements: { _method: post|delete }

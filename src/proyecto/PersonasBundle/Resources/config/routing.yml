@@ -1,0 +1,16 @@
+proyecto_personas_homepage:
+    path:     /Personas
+    defaults: { _controller: proyectoPersonasBundle:Default:index }
+        
+proyecto_paciente_crud:
+    resource: "@proyectoPersonasBundle/Resources/config/routing/paciente.yml"
+    prefix:   /Pacientes
+        
+        
+proyecto_tratamiento_crud:
+    resource: "@proyectoPersonasBundle/Resources/config/routing/tratamiento.yml"
+    prefix:   /Tratamientos 
+    
+proyectoPersonasBundle_proyecto_ficha_preparado:
+    resource: "@proyectoPersonasBundle/Resources/config/routing/fichapreparado.yml"
+    prefix:   /FichasPrepados

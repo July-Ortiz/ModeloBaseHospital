@@ -1,0 +1,18 @@
+{% extends 'proyectoMainBundle::layout.html.twig' %}
+
+{% block titulo %} paciente{% endblock %}
+
+{% block main_content -%}  
+    <h1>Modificar datos del paciente</h1>
+
+    {{ form(edit_form) }}
+
+        <ul class="tabla_encabezado">
+    <li>
+        <a href="{{ path('proyecto_paciente') }}">
+            Volver
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

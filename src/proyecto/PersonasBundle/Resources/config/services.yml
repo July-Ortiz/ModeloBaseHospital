@@ -1,0 +1,7 @@
+parameters:
+#    proyecto_personas.example.class: proyecto\PersonasBundle\Example
+
+services:
+#    proyecto_personas.example:
+#        class: %proyecto_personas.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

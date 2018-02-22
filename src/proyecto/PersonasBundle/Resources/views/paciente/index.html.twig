@@ -1,0 +1,66 @@
+{% extends 'proyectoMainBundle::layout.html.twig' %}
+
+{% block titulo %} paciente{% endblock %}
+
+{% block main_content -%}
+     
+    <h1>LISTADO DE PACIENTES</h1>
+    
+    
+<ul><a href="{{ path('proyecto_paciente_new') }}">Nuevo paciente</a></ul>
+
+<div style="overflow-y:auto;">
+    
+    <table class="tabla">
+        <thead>
+            <tr class="tabla_encabezado">
+                <th>Id</th>
+                <th>Dni</th>
+                <th>Fecha Ingreso</th>
+                <th>Peso</th>
+                <th>Talla</th>
+                <th>Nombre y Apellido</th>
+                <th>Obra Social</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('proyecto_paciente_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.dni }}</td>
+                <td>{{ entity.fechaIngreso }}</td>
+                <td>{{ entity.peso }}</td>
+                <td>{{ entity.talla }}</td>
+                <td>{{ entity.NombreYApellido }}</td>
+                <td>{{ entity.ObraSocial }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a button href="{{ path('proyecto_paciente_show', { 'id': entity.id }) }}">Ver</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('proyecto_paciente_edit', { 'id': entity.id }) }}">Modificar</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('proyecto_tratamiento_show', { 'id': entity.id }) }}">Tratamiento</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('proyecto_ficha_preparado_show', { 'id': entity.id }) }}">FichaPreparado</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('proyecto_paciente_new') }}">
+                Ingresar nuevo paciente
+            </a>
+        </li>
+    </ul>
+</div>               
+    {% endblock %}

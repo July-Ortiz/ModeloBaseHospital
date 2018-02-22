@@ -1,0 +1,114 @@
+{% extends 'proyectoMainBundle::layout.html.twig' %}
+
+{% block main_content -%}  
+    <h1>FICHA DE PREPARADO</h1>
+
+    <table class="tabla">
+        <tbody>
+            <tr class="tabla_encabezado">
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Fecha</th>
+                <td>{{ entity.fecha }}</td>
+            </tr>
+            <tr>
+                <th>Droga</th>
+                <td>{{ entity.droga }}</td>
+            </tr>
+            <tr>
+                <th>Dosis</th>
+                <td>{{ entity.dosis }}</td>
+            </tr>
+            <tr>
+                <th>Volumen Final</th>
+                <td>{{ entity.volumenFinal }}</td>
+            </tr>
+            <tr>
+                <th>Solvente</th>
+                <td>{{ entity.solvente }}</td>
+            </tr>
+            <tr>
+                <th>Diluyente</th>
+                <td>{{ entity.diluyente }}</td>
+            </tr>
+            <tr>
+                <th>Volumen</th>
+                <td>{{ entity.volumen }}</td>
+            </tr>
+            <tr>
+                <th>Concentracion</th>
+                <td>{{ entity.concentracion }}</td>
+            </tr>
+            <tr>
+                <th>Tiempo Infusion</th>
+                <td>{{ entity.tiempoInfusion }}</td>
+            </tr>
+            <tr>
+                <th>Velocidad Infusion</th>
+                <td>{{ entity.velocidadInfusion }}</td>
+            </tr>
+            <tr>
+                <th>Estabilidad Dilucion</th>
+                <td>{{ entity.estabilidadDilucion }}</td>
+            </tr>
+            <tr>
+                <th>Conservacion</th>
+                <td>{{ entity.conservacion }}</td>
+            </tr>
+            <tr>
+                <th>Farmaceutico</th>
+                <td>{{ entity.farmaceutico }}</td>
+            </tr>
+            <tr>
+                <th>Control Farmaceutico</th>
+                <td>{{ entity.controlFarmaceutico }}</td>
+            </tr>
+            <tr>
+                <th>Tecnico Preparacion</th>
+                <td>{{ entity.tecnicoPreparacion }}</td>
+            </tr>
+            <tr>
+                <th>Control Calidad</th>
+                <td>{{ entity.controlCalidad }}</td>
+            </tr>
+            <tr>
+                <th>Observaciones</th>
+                <td>{{ entity.observaciones }}</td>
+            </tr>
+            <tr>
+                <th>Paciente_id</th>
+                <td>{{ entity.pacienteid }}</td>
+            </tr>
+            <tr>
+                <th>Tratamiento_id</th>
+                <td>{{ entity.tratamientoid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="tabla_encabezado">
+    <li>
+        <a href="{{ path('proyecto_ficha_preparado') }}">
+            Volver
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('proyecto_ficha_preparado_edit', { 'id': entity.id }) }}">
+            Modificar
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('proyecto_tratamiento') }}">
+            TRATAMIENTO
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('proyecto_paciente') }}">
+            PACIENTE
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

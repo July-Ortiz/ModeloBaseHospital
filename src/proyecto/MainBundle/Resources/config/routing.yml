@@ -1,0 +1,5 @@
+proyecto_main_paciente:
+    path:     /Main
+    defaults: { _controller: proyectoMainBundle:Default:index }
+    
+

@@ -1,0 +1,56 @@
+{% extends 'proyectoMainBundle::layout.html.twig' %}
+
+{% block main_content -%}  
+    <h1>TIPOS DE TRATAMIENTOS</h1>
+    
+<ul><a href="{{ path('proyecto_tratamiento_new') }}">Nuevo</a></ul>
+
+<div style="overflow-y:auto;">
+
+    <table class="tabla">
+        <thead>
+            <tr class="tabla_encabezado">
+                <th>Id</th>
+                <th>Medico</th>
+                <th>Fecha Ingreso</th>
+                <th>Ambulatorio</th>
+                <th>Observaciones</th>
+                <th>Especialidad</th>
+                <th>Paciente_id</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('proyecto_tratamiento_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.medico }}</td>
+                <td>{{ entity.fecha }}</td>
+                <td>{{ entity.ambulatorio }}</td>
+                <td>{{ entity.observaciones }}</td>
+                <td>{{ entity.especialidad }}</td>
+                <td>{{ entity.pacienteid }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('proyecto_tratamiento_show', { 'id': entity.id }) }}">Ver</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('proyecto_tratamiento_edit', { 'id': entity.id }) }}">Modificar</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('proyecto_tratamiento_new') }}">
+                Nuevo Tratamiento
+            </a>
+        </li>
+    </ul>
+</div>                
+    {% endblock %}

@@ -1,0 +1,34 @@
+proyecto\PersonasBundle\Entity\tratamiento:
+    type: entity
+    table: null
+    repositoryClass: proyecto\PersonasBundle\Entity\tratamientoRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        medico:
+            type: string
+            length: 255
+        fecha:
+            type: string
+            length: 255
+        ambulatorio:
+            type: boolean
+            length: 2
+        observaciones:
+            type: string
+            length: 255
+        especialidad:
+            type: string
+            length: 255    
+            
+        paciente_id: 
+                paciente:
+                    targetEntity: paciente
+                    joinColumn:
+                        name: paciente_id
+                        referencedColumnName: id
+                        nullable: FALSE
+    lifecycleCallbacks: {  }

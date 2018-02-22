@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Entity/paciente.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Entity/pacienteRepository.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Entity/tratamiento.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Entity/tratamientoRepository.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Entity/FichaPreparado.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Resources/config/services.yml</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Entity/FichaPreparadoRepository.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Resources/config/doctrine/paciente.orm.yml</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/Acme/DemoBundle/Form/ContactType.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Resources/config/doctrine/tratamiento.orm.yml</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/MainBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/MainBundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/MainBundle/proyectoMainBundle.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/MainBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/MainBundle/Resources/public/css/main.css</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/MainBundle/Resources/public/images/logo.jpg</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/proyectoPersonasBundle.php</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Resources/config/routing/paciente.yml</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/ModeloBaseHospital/src/proyecto/PersonasBundle/Resources/config/routing/fichapreparado.yml</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,78 @@
+proyecto\PersonasBundle\Entity\FichaPreparado:
+    type: entity
+    table: null
+    repositoryClass: proyecto\PersonasBundle\Entity\FichaPreparadoRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        fecha:
+            type: string
+            length: 255
+        droga:
+            type: string
+            length: 255
+        dosis:
+            type: string
+            length: 255
+        volumenFinal:
+            type: string
+            length: 255
+        solvente:
+            type: string
+            length: 255
+        diluyente:
+            type: string
+            length: 255
+        volumen:
+            type: string
+            length: 255
+        concentracion:
+            type: string
+            length: 255
+        tiempoInfusion:
+            type: string
+            length: 255
+        velocidadInfusion:
+            type: string
+            length: 255
+        estabilidadDilucion:
+            type: string
+            length: 255
+        conservacion:
+            type: string
+            length: 255
+        farmaceutico:
+            type: string
+            length: 255
+        controlFarmaceutico:
+            type: string
+            length: 255
+        tecnicoPreparacion:
+            type: string
+            length: 255
+        controlCalidad:
+            type: string
+            length: 255
+        observaciones:
+            type: string
+            length: 255
+            
+        paciente_id: 
+                paciente:
+                    targetEntity: paciente
+                    joinColumn:
+                        name: paciente_id
+                        referencedColumnName: id
+                        nullable: FALSE
+                        
+        tratamiento_id:        
+                tratamiento:
+                    targetEntity: tratamiento
+                    joinColumn:
+                        name: tratamiento_id
+                        referencedColumnName: id
+                        nullable: FALSE                     
+    lifecycleCallbacks: {  }

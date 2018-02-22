@@ -1,0 +1,57 @@
+{% extends 'proyectoMainBundle::layout.html.twig' %}
+
+{% block main_content -%} 
+    <h1>TRATAMIENTO</h1>
+
+    <table class="tabla">
+        <tbody>
+            <tr class="tabla_encabezado">
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Medico</th>
+                <td>{{ entity.medico }}</td>
+            </tr>
+            <tr>
+                <th>Fecha Ingreso</th>
+                <td>{{ entity.fecha }}</td>
+            </tr>
+            <tr>
+                <th>Ambulatorio</th>
+                <td>{{ entity.ambulatorio }}</td>
+            </tr>
+            <tr>
+                <th>Observaciones</th>
+                <td>{{ entity.observaciones }}</td>
+            </tr>
+            <tr>
+                <th>Especialidad</th>
+                <td>{{ entity.especialidad }}</td>
+            </tr>
+            <tr>
+                <th>Paciente_id</th>
+                <td>{{ entity.pacienteid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="tabla_encabezado">
+    <li>
+        <a href="{{ path('proyecto_tratamiento') }}">
+            Volver
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('proyecto_tratamiento_edit', { 'id': entity.id }) }}">
+            Modificar
+        </a>
+    </li>
+     <li>
+        <a href="{{ path('proyecto_paciente') }}">
+            PACIENTE
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

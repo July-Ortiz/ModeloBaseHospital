@@ -1,0 +1,82 @@
+{% extends 'proyectoMainBundle::layout.html.twig' %}
+
+{% block main_content -%}  
+    <h1>LISTADO DE FICHAS PREPARADOS</h1>
+    
+<ul><a href="{{ path('proyecto_ficha_preparado_new') }}">Nueva Ficha</a></ul>
+
+<div style="overflow-x:auto;">
+    
+    <table class="tabla">
+        <thead>
+            <tr class="tabla_encabezado">
+                <th>Id</th>
+                <th>Fecha</th>
+                <th>Droga</th>
+                <th>Dosis</th>
+                <th>Volumen Final</th>
+                <th>Solvente</th>
+                <th>Diluyente</th>
+                <th>Volumen</th>
+                <th>Concentracion</th>
+                <th>Tiempo Infusion</th>
+                <th>Velocidad Infusion</th>
+                <th>Estabilidad Dilucion</th>
+                <th>Conservacion</th>
+                <th>Farmaceutico</th>
+                <th>Control Farmaceutico</th>
+                <th>Tecnico Preparacion</th>
+                <th>Control Calidad</th>
+                <th>Observaciones</th>
+                <th>Paciente_id</th>
+                <th>Tratamiento_id</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('proyecto_ficha_preparado_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.fecha }}</td>
+                <td>{{ entity.droga }}</td>
+                <td>{{ entity.dosis }}</td>
+                <td>{{ entity.volumenFinal }}</td>
+                <td>{{ entity.solvente }}</td>
+                <td>{{ entity.diluyente }}</td>
+                <td>{{ entity.volumen }}</td>
+                <td>{{ entity.concentracion }}</td>
+                <td>{{ entity.tiempoInfusion }}</td>
+                <td>{{ entity.velocidadInfusion }}</td>
+                <td>{{ entity.estabilidadDilucion }}</td>
+                <td>{{ entity.conservacion }}</td>
+                <td>{{ entity.farmaceutico }}</td>
+                <td>{{ entity.controlFarmaceutico }}</td>
+                <td>{{ entity.tecnicoPreparacion }}</td>
+                <td>{{ entity.controlCalidad }}</td>
+                <td>{{ entity.observaciones }}</td>
+                <td>{{ entity.pacienteid }}</td>
+                <td>{{ entity.tratamientoid }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('proyecto_ficha_preparado_show', { 'id': entity.id }) }}">Ver</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('proyecto_ficha_preparado_edit', { 'id': entity.id }) }}">Modificar</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('proyecto_ficha_preparado_new') }}">
+                Ingresar nueva ficha de preparado
+            </a>
+        </li>
+    </ul>
+</div>            
+    {% endblock %}

@@ -1,0 +1,30 @@
+proyecto_ficha_preparado:
+    path:     /
+    defaults: { _controller: "proyectoPersonasBundle:FichaPreparado:index" }
+
+proyecto_ficha_preparado_show:
+    path:     /{id}/show
+    defaults: { _controller: "proyectoPersonasBundle:FichaPreparado:show" }
+
+proyecto_ficha_preparado_new:
+    path:     /new
+    defaults: { _controller: "proyectoPersonasBundle:FichaPreparado:new" }
+
+proyecto_ficha_preparado_create:
+    path:     /create
+    defaults: { _controller: "proyectoPersonasBundle:FichaPreparado:create" }
+    requirements: { _method: post }
+
+proyecto_ficha_preparado_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "proyectoPersonasBundle:FichaPreparado:edit" }
+
+proyecto_ficha_preparado_update:
+    path:     /{id}/update
+    defaults: { _controller: "proyectoPersonasBundle:FichaPreparado:update" }
+    requirements: { _method: post|put }
+
+proyecto_ficha_preparado_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "proyectoPersonasBundle:FichaPreparado:delete" }
+    requirements: { _method: post|delete }

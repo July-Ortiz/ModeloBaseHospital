@@ -1,0 +1,68 @@
+body {
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    background-color: #CCCCCC
+}
+h1 {
+    text-align: center;
+}
+
+
+#header{
+    background:cadetblue;
+    height: 120px;
+    color:#FFFFFF;
+    font-size: 20px;
+}
+
+#main_content{
+    width: 98%; 
+    clear: both;    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#layout{
+  border: 1px solid #CCCCCC;
+  height: auto;
+  margin: auto;
+  width: 990px;
+  background-color: #E6E6E6;
+}
+
+#footer{
+    background: cadetblue;  
+    font-size:12px;
+    font-weight: normal;
+    text-align: right;
+    color: #FFFFFF;
+    
+}
+
+.tabla {
+   width: 90%;
+   margin: auto;
+   font-size: 12px;
+   border: 1px solid #636363;
+}
+
+.tabla_encabezado{
+    background-color: #CCCCCC;
+    text-align: center;
+    font-weight: bold;   
+}
+
+.tabla_datos{
+    text-align: center;
+    font-weight: bold;
+}
+
+#content{
+    min-height: 300px;
+    border:1px solid #CCCCCC;
+}
+
+.h2_centrado{
+    text-align: center;
+}
+

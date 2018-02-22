@@ -1,0 +1,15 @@
+{% extends 'proyectoMainBundle::layout.html.twig' %}
+
+{% block main_content -%}  
+    <h1>Ingresar nuevo paciente</h1>
+
+    {{ form(form) }}
+
+        <ul class="tabla_encabezado">
+    <li>
+        <a href="{{ path('proyecto_paciente') }}">
+            Volver 
+        </a>
+    </li>
+</ul>
+{% endblock %}

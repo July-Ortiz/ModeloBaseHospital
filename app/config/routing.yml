@@ -1,0 +1,12 @@
+proyecto_personas:
+    resource: "@proyectoPersonasBundle/Resources/config/routing.yml"
+    prefix:   /
+
+proyecto_main:
+    resource: "@proyectoMainBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+
+
+
+
